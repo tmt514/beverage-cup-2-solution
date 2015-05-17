@@ -12,6 +12,8 @@
 
 $$dp[i+1][j+k] += (dp[i][j] * C[A[i+1]][k])\%MOD$$
 
+由於兩個維度分別只要枚舉 $$0$$ 到 $$n$$ 就好，因此這樣計算的時間複雜度是 $$O(n^3)$$。
+
 ## 不算故事的故事
 
 這部份跟解題無關。只是想跟大家分享一下 Parking function 的故事和一些性質。可以參考 [MIT 的投影片](http://www-math.mit.edu/~rstan/transparencies/parking3.pdf)。
@@ -24,4 +26,8 @@ $$f(n) = (n+1)^{n-1}$$
 
 這麼多種方法！
 
-在 1959 年，Ronald Pyke 發現並證明了這個定理、Alan Konheim 和 Weiss 在 1966 年也獨立做出了這個結果。但是直到 1974 年
+在 1959 年，Ronald Pyke 發現並證明了這個定理、Alan Konheim 和 Benjamin Weiss 在 1966 年也獨立做出了這個結果。但是直到 1974 年由 Pollak 給出了一個超輕巧與精采的組合證明。
+
+大家還有在什麼地方看過這樣的公式？沒錯！就是 [Cayley's Formula 標號樹的計數](http://en.wikipedia.org/wiki/Cayley%27s_formula)！那麼必定有其對應關係吧！這個對應有兩種，一種是透過 [Prüfer 序列](http://en.wikipedia.org/wiki/Pr%C3%BCfer_sequence) 對一棵標號樹進行編碼。另一個則是透過 BFS 走訪記錄每個節點被發現的時間，直接對應到一個 parking function。大家有興趣也可以想看看，網路上也有相當多的資料可以參考～
+
+除此之外，還可以參考賴俊儒學長以前的[科展內容](http://www.sec.ntnu.edu.tw/cultivation/92%E5%B9%B4/%E6%95%B8/%E8%B3%B4%E4%BF%8A%E5%84%92.pdf)，主要在描述 parking function 與另一個有趣遊戲 Chip-firing game 之間的關係。不過文章內也有提到一些關於 parking function 之中的有趣性質！
