@@ -18,4 +18,5 @@
 \begin{array}{ll}
 0 & \mbox{若第 i 個位置不能是 last。}\\
 \sum_{j\in S} dp[i-1][S \setminus \{last\}][j] & \mbox{其他}
+\end{array}
 \right.{% endmath %}
