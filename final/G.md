@@ -17,7 +17,7 @@
 {% math %} dp[i][S][last] = \left\{
 \begin{array}{ll}
 0 & \mbox{若第 i 個位置不能是 last。}\\
-\sum_{j\in S} dp[i-1][S \setminus \{last\}][j] & \mbox{其他}
+\sum_{j\in S} dp[i-1][S \setminus \{last\}][j] \times coPrime(last, j) & \mbox{其他}
 \end{array}
 \right.{% endmath %}
 
@@ -29,4 +29,4 @@
 
 ### 另外一種作法
 
-如果我們考慮子集 $$S$$，預先將
+如果我們考慮子集 $$S$$，預先將已經出現在序列上的數字**排除**，但此時長度資訊會喪失
