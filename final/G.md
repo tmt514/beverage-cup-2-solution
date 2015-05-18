@@ -25,4 +25,4 @@
 
 ### 更仔細的分析
 
-如同 Hamiltonian Path，我們也可以
+如同 Hamiltonian Path，我們也可以。
