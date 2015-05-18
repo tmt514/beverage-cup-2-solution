@@ -20,3 +20,9 @@
 \sum_{j\in S} dp[i-1][S \setminus \{last\}][j] & \mbox{其他}
 \end{array}
 \right.{% endmath %}
+
+一個簡單的估計是：第一個維度 $$n$$，第二個維度 $$2^n$$，第三個維度 $$n$$；轉移是 $$O(n)$$，因此時間複雜度是 $$O(n^32^n)$$。但是真的是這樣嗎？
+
+### 更仔細的分析
+
+如同 Hamiltonian Path，我們也可以
