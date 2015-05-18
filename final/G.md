@@ -14,6 +14,8 @@
 
 一個簡單的想法即是：考慮「$$i=$$ 當前序列長度」、「$$S=$$ 哪些數字做過了」、「$$last =$$ 當前最末一個數是多少」，於是我們便有以下的遞迴轉移關係：
 
-{% math %} dp[i][S][last] = \sum_{j\in S} dp[i-1][S \setminus \{last\}][j] {% endmath %}
-
-而初始條件便是
+{% math %} dp[i][S][last] = \left\{
+\begin{array}{ll}
+0 & \mbox{若第 $$i$$ 個位置不能是 $$last$$。}\\
+\sum_{j\in S} dp[i-1][S \setminus \{last\}][j] & \mbox{其他}
+\right.{% endmath %}
