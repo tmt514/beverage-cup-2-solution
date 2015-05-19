@@ -2,6 +2,12 @@
 
 * [introduction](README.md)
 * [暖身賽](warmup/warmup.md)
+   * [A - Euler's Criterion](warmup/A.md)
+   * [B - The Brush](warmup/B.md)
+   * [C - Exploding CPU 2](warmup/C.md)
+   * [D - Useless Hash](warmup/D.md)
+   * [E - Link Protection](warmup/E.md)
+   * [F - Walking on a Hypercube](warmup/F.md)
 * [正式賽](final/final.md)
    * [A - Attack and Split](final/A.md)
    * [B - Dreamoon's Criterion](final/B.md)
