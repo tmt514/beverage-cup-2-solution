@@ -22,7 +22,7 @@
 
 接下來是轉移，我們可以考慮的是，被標記的那個 $$i$$ 是所有 $$a_i$$ 個 $$i$$ 之中的第 $$j$$ 個！然後枚舉一下被標記的 $$i-1$$ 出現的位置 $$\ell$$。於是利用一點點的組合數我們可以寫下：
 
-$$dp[i][k] = \displaystyle\sum_{j=1}^{a_i} \displaystyle\sum_{1\le \ell\lt k} dp[i-1][\ell] {\binom{\ell-1+j-1}{j-1}}
+$$dp[i][k] = \displaystyle\sum_{j=1}^{a_i} \displaystyle\sum_{1\le \ell\lt k} dp[i-1][\ell] {\binom{\ell-1+j-1}{j-1}}{\binom{(a_1+\cdots+a_i) - k}{a_i-j}}
 $$
 
 ## 評論
