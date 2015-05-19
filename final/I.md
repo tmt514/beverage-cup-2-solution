@@ -29,7 +29,21 @@ $$
 
 ### 多看兩眼
 
-我們觀察遞迴關係的中間兩項，
+我們觀察遞迴關係的第三項，發現這一項與 $$\ell$$ 並無任何關係！因此我們可以把這一項搬到前面去：
+
+$$dp[i][k] = \displaystyle\sum_{j=1}^{a_i} {\binom{(a_1+\cdots+a_i) - k}{a_i-j}} \displaystyle\sum_{1\le \ell\lt k} dp[i-1][\ell] {\binom{\ell-1+j-1}{j-1}}
+$$
+
+令 $$c_{j,k} = \sum_{1\le \ell\lt k} dp[i-1][\ell] {\binom{\ell-1+j-1}{j-1}}$$，我們有：
+
+$$c_{j,k+1} = c_{j,k} + dp[i-1][k]{\binom{k-1+j-1}{j-1}}$$
+
+於是原式就會變成
+
+$$dp[i][k] = \displaystyle\sum_{j=1}^{a_i} {\binom{(a_1+\cdots+a_i) - k}{a_i-j}} c_{j,k}
+$$
+
+就得到一個 $$O(n^4)$$ 的解了！
 
 ## 評論
 
