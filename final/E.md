@@ -44,4 +44,4 @@ for(int j=0;j<vn*2;j++){ // 原code這個for迴圈是使用Macro
 
 很接近 $$\pi$$ 的夾角對大家來說可能比較難想像，那我們把向量 $$v1$$ 反向，於是所求也可想像成 $$-v1$$ 和 $$v2$$  的夾角必須小於 $$10^{-12}$$。
 
-現在我們就來想想，平面上給定座標範圍最接近的兩個夾角可以多小？這個問題[在 Codefoces 的 Blog 上有某人給了解答](http://codeforces.com/blog/entry/17602)
+現在我們就來想想，平面上給定座標範圍最接近的兩個夾角可以多小？這個問題[在 Codefoces 的 Blog 上有某人給了解答](http://codeforces.com/blog/entry/17602)，
