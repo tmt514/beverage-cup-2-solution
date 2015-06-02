@@ -6,8 +6,16 @@
 
 送完早餐回到家後，比賽已經結束了，桐乃發現她所有上傳的答案都被評為正確！？這時他傻笑的說：「嘿嘿嘿～這一定是我對哥哥的愛所賜的祝福吧 :D」
 
+從這個故事我們可以注意到，要生測資實屬不易，實際上能讓桐乃 WA 掉的測資，可以讓不少人的 code 都 WA 掉，若比賽的正式測資存在這樣的測資的話，比賽結將會大大的不同吧？
 
+現在問題來了，你能夠生出讓桐乃該題 WA 掉的測資嗎？
+
+[要看該題題目敘述請點這 ( Problem C Logging )](http://code.google.com/codejam/contest/4224486/dashboard#s=p2)
+
+[要找到桐乃(Kirino)的程式碼請點這](http://code.google.com/codejam/contest/4224486/scoreboard?c=4224486#vt=1&vf=1)
 
 ## 簡化題意
+
+請找到一組能讓 2015 年 Google Code Jam Round 1A 第三名第三題的Code WA 的測資。
 
 ## 題解
